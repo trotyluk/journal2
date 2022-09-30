@@ -1,8 +1,14 @@
 <html>
-<h1>Imiona </h1>
-<ul>
-{% for journal in journals %}
-    <li>{{journal.fname}} {{journal.sname}} DOB: {{journal.sname}}</li>
-{% endfor %}
-</ul>
+    <head>
+        <meta charset="utf-8" />
+        <title>Journals list </title>
+    </head>
+    <body>
+        <h1>Dane osobowe </h1>
+        <ul>
+        {% for journal in journals %}
+            <li>{{journal.fname}} {{journal.sname}} DOB: {{journal.sname}}</li>
+        {% endfor %}
+        </ul>
+    </body>
 </html>
